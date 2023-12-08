@@ -1,0 +1,287 @@
+:root {
+    --rouge-foncer: #c60a19;
+    --bloc-maison: #e0dfdf;
+    --gris-foncer: #3e3d4b;
+    --noir: #000000;
+}
+@font-face {
+    font-family: "caviar";
+    src: url(./../fonts/caviar/CaviarDreams.ttf) format("truetype");
+}
+@font-face {
+    font-family: "caviar-bold";
+    src: url(./../fonts/caviar/CaviarDreams_Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "caviar-italic";
+    src: url(./../fonts/caviar/CaviarDreams_Italic.ttf) format("truetype");
+}
+@font-face {
+    font-family: "caviar-bold-italic";
+    src: url(./../fonts/caviar/CaviarDreams_BoldItalic.ttf) format("truetype");
+}
+@font-face {
+    font-family: "myriadpro";
+    src: url(./../fonts/myriadpro/MYRIADPRO-REGULAR.woff) format("woff");
+}
+@font-face {
+    font-family: "myriadpro-bold";
+    src: url(./../fonts/myriadpro/MYRIADPRO-BOLD.woff) format("woff2");
+}
+@font-face {
+    font-family: "fontawsome";
+    src: url(../fontawsome/webfonts/fa-solid-900.woff2) format("woff2"),
+        url(../fontawsome/webfonts/fa-solid-900.ttf) format("truetype"),
+        url(../fontawsome/webfonts/fa-v4compatibility.ttf) format("truetype"),
+        url(../fontawsome/webfonts/fa-v4compatibility.woff2) format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+* {
+    font-family: "caviar", sans-serif;
+}
+
+h1 {
+    font-family: myriadpro;
+}
+/* COMPONENT */
+/* IMAGES */
+.card-text-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ajustez si nécessaire pour contrôler la hauteur */
+}
+.h-fit-content {
+    height: fit-content;
+}
+
+/* ACCORDION */
+.icon-display.collapsed::before {
+    font-family: "fontawsome", serif;
+    content: "\f138";
+    margin-right: 5px;
+}
+.icon-display.collapsed::after {
+    display: none !important;
+}
+.icon-display:not(.collapsed)::before {
+    font-family: "fontawsome";
+    content: "\f13a";
+    margin-right: 5px;
+}
+.icon-display:not(.collapsed)::after {
+    display: none !important;
+}
+
+/* COLORS */
+.blacky {
+    color: var(--noir);
+}
+/* FiXED ICONS */
+.fixed-icons {
+    position: fixed;
+    bottom: 70%;
+    right: 10px;
+}
+
+.icon-phone {
+    border: 1px solid var(--noir);
+}
+
+.icon-mail {
+    border: 1px solid var(--noir);
+}
+
+/*
+**********************************
+*            Buttons             *
+**********************************
+*/
+.btn-menu {
+    color: white;
+    border-color: white;
+}
+.btn-house {
+    background-color: white;
+    color: var(--noir);
+    border: 1px solid var(--noir);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 5px;
+}
+
+.btn-house a {
+    text-decoration: none;
+    color: var(--noir);
+}
+
+.btn-house:hover {
+    background-color: #000000;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-house:hover a {
+    color: white;
+}
+
+/*
+ *********************************************
+ *                  HEADER                   *
+ *********************************************
+*/
+
+.active {
+    text-decoration: underline;
+}
+
+.infos-banner {
+    display: none;
+    background-color: #dcdcdc;
+}
+
+.img-slider {
+    max-height: 400px !important;
+}
+
+.rouge-bg {
+    background-color: var(--rouge-foncer);
+}
+.banner-logo {
+    cursor: pointer;
+}
+/*
+ *********************************************
+ *                  MAIN                     *
+ *********************************************
+*/
+
+.search-bar {
+    background-color: var(--gris-foncer);
+    min-height: 3rem;
+}
+.houses-navi {
+    color: var(--noir) !important;
+    border-color: var(--noir);
+}
+.houses-navi:hover {
+    color: white !important;
+    border-color: white;
+    background-color: var(--noir);
+}
+
+/* CONTACT */
+.textfield {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+/*
+ *********************************************
+ *                  FOOTER                   *
+ *********************************************
+*/
+.footer-bg {
+    background-image: url(../images/fond-ville.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bg p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.footer-banner {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin-top: 15%;
+}
+.footer-bg .phone {
+    font-size: 12px;
+}
+.footer-logo {
+    z-index: 9999;
+}
+.reseaux {
+    background-color: white;
+    border: none;
+}
+.copyright {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright a:hover {
+    text-decoration: underline !important;
+}
+
+/*
+ *********************************************
+ *                  SWIPER                   *
+ *********************************************
+*/
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 575px) {
+}
+
+@media screen and (min-width: 768px) {
+    .infos-banner {
+        display: flex;
+    }
+    /* HOME */
+    .advertisement {
+        top: 15%;
+        left: 30%;
+    }
+    /* FOOTER */
+    .footer-banner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        order: 2;
+        margin-top: -50px;
+    }
+    .footer-news {
+        order: 3;
+    }
+}
+

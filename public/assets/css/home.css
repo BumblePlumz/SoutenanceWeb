@@ -1,0 +1,27 @@
+.home-navy{
+   color: white;
+   background-color: var(--rouge-foncer);
+}
+.advertisement {
+    top: 30%;
+    left: 35%;
+}
+@media screen and (min-width: 768px){
+    .home-header{
+        position: relative;
+    }
+    .home-navy {
+        position: absolute;
+        z-index: 500;
+        width: 100%;
+        bottom: 0;
+        background-color: rgba(198, 10, 25, 0.5);
+    }
+}
+@media screen and (min-width: 992px) {
+    /* HOME */
+    .advertisement {
+        top: 25%;
+        left: 30%;
+    }
+}

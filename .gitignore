@@ -1,5 +1,0 @@
-# Ignorer tous les fichiers .log
-*.log
-
-# Ignorer le dossier spécifique
-/node_modules
